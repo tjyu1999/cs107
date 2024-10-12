@@ -61,7 +61,7 @@ int main(int argc, char *argv[]) {
     if (argc < 2) 
         fprintf(stderr, "Missing argument. Please supply one or more unicode code points in decimal or hex.\n");
     
-    for (int i = 1; i < argc; i++) {
+    for (int i = 1; i < argc; ++i) {
         unsigned short cp = convert_arg(argv[i], 0, USHRT_MAX);
         unsigned char seq[4];
         int len = to_utf8(cp, seq);
