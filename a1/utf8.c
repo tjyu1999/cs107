@@ -36,9 +36,9 @@ void print_utf8(unsigned short cp, unsigned char seq[], int len) {
     int i;
     
     printf("U+%04X   Hex:", cp);
-    for (i = 0; i < len; i++)
+    for (i = 0; i < len; ++i)
         printf(" %02x", seq[i]);
-    for ( ; i < 4; i++) 
+    for ( ; i < 4; ++i) 
         printf("   ");
         
     seq[len] = '\0';
