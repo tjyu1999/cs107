@@ -1,3 +1,3 @@
 # cs107
 
-Assignments of Stanford CS107 course.
+The assignments of Stanford CS107 course.
