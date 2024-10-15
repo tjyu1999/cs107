@@ -1,6 +1,6 @@
 /* Sierpinski triangle:
  *
- * outputs an ascii representation of the Sierpinski triangle
+ * output an ascii representation of the Sierpinski triangle
  * the works due to the relationship between the fractal and Pascal's triangle
  */
 
