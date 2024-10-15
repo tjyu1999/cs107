@@ -1,7 +1,6 @@
 /* saturating addition:
  *
- * return the type's maximum value while positive overflow 
- * and minimum while negative overflow
+ * return the type's maximum value while positive overflow and minimum while negative overflow
  */
 
 #include <stdio.h>
