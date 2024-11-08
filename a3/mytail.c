@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <limits.h>
 #include <assert.h>
-#include "prototypes.h"
+#include "readline.h"
 
 #define MAX_NLINES_ON_STACK 10000
 
