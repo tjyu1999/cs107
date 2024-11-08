@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "prototypes.h"
+#include "readline.h"
 
 int main(int argc, char *argv[]) {
     FILE *fp;
