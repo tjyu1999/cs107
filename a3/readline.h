@@ -1,4 +1,4 @@
-/* read line
+/* read line:
  * 
  * take one parameter, which is a file to read from,
  * return the next line as a heap-allocated C string,
