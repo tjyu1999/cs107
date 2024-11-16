@@ -1,3 +1,10 @@
+/* read line
+ * 
+ * take one parameter, which is a file to read from,
+ * return the next line as a heap-allocated C string,
+ * or NULL if there's nothing more to read
+ */
+
 #include <string.h>
 #include <stdlib.h>
 #include <assert.h>
