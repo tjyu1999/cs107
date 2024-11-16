@@ -1,3 +1,8 @@
+/* mytail:
+ *
+ * a simplified version of the Unix tail command
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
