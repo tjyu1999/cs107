@@ -1,3 +1,8 @@
+/* myuniq:
+ *
+ * a simplified version of the Unix uniq command
+ */
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
