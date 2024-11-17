@@ -1,3 +1,9 @@
+/* mycat:
+ *
+ * it is similar to the built-in cat Unix command
+ * the purpose is to test read line function
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "readline.h"
