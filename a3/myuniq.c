@@ -1,6 +1,6 @@
 /* myuniq:
  *
- * a simplified version of the Unix uniq command
+ * a simplified version of Unix uniq command
  */
 
 #include <stdio.h>
@@ -14,7 +14,7 @@ void print_uniq_lines(FILE *fp) {
     char *curr = NULL;
     size_t count = 1;
     
-    while (1) {
+    while (true) {
         if (ungetc(getc(fp), fp) == EOF){
             if (prev != NULL){
                 printf("%lu %s\n", count, prev);
@@ -31,7 +31,7 @@ void print_uniq_lines(FILE *fp) {
                 count = 1;
             }
             else
-                count++;
+                ++count;
             
             free(prev);
         }
