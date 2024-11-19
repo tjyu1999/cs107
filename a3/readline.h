@@ -1,16 +1,14 @@
 /* read line:
  * 
  * take one parameter, which is a file to read from
- * return the next line as a heap-allocated C string
- * or NULL if there's nothing more to read
+ * return the next line as a heap-allocated C string or NULL if there's nothing more to read
  */
 
 #include <string.h>
 #include <stdlib.h>
 #include <assert.h>
 
-// initial allocation will be for min size, if not big enough, doubles
-// to 64, then 128, then 256, etc. as needed to accommodate the entire line
+// initial allocation will be for min size
 #define MINIMUM_SIZE 32
 
 char *read_line(FILE *fp) {
@@ -37,7 +35,7 @@ char *read_line(FILE *fp) {
             if (ungetc(getc(fp), fp) == EOF)
                 return line;
             else{
-                assert(fseek(fp, 1-current_size, SEEK_CUR) == 0);
+                assert(fseek(fp, 1 - current_size, SEEK_CUR) == 0);
                 current_size *= 2;
             }
         }
