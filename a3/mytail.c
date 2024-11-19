@@ -1,6 +1,6 @@
 /* mytail:
  *
- * a simplified version of the Unix tail command
+ * a simplified version of Unix tail command
  */
 
 #include <stdio.h>
