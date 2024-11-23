@@ -35,7 +35,7 @@ void print_last_n(FILE *fp, int n) {
 
     size_t s = (i > n) ? i % n : 0;
     for (size_t j = 0; j < ((i > n) ? n : i); ++j)
-        printf("%s\n", p[(s+j)%n]);
+        printf("%s\n", p[(s + j) % n]);
 
     for (size_t j = 0; j < n; ++j) {
         if (p[j] != NULL)
