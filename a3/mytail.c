@@ -1,4 +1,4 @@
-/* mytail:
+二/* mytail:
  *
  * a simplified version of Unix tail command
  */
@@ -29,7 +29,7 @@ void print_last_n(FILE *fp, int n) {
     while (ungetc(getc(fp), fp) != EOF) {
         if (p[i % n] != NULL)
             free(p[i % n]);
-        p[i%n] = read_line(fp);
+        p[i % n] = read_line(fp);
         ++i;
     }
 
@@ -37,7 +37,7 @@ void print_last_n(FILE *fp, int n) {
     for (size_t j = 0; j < ((i > n) ? n : i); ++j)
         printf("%s\n", p[(s+j)%n]);
 
-    for(size_t j = 0; j < n; ++j) {
+    for (size_t j = 0; j < n; ++j) {
         if (p[j] != NULL)
             free(p[j]);
     }
