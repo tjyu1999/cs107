@@ -34,7 +34,7 @@ char *read_line(FILE *fp) {
         else {
             if (ungetc(getc(fp), fp) == EOF)
                 return line;
-            else{
+            else {
                 assert(fseek(fp, 1 - current_size, SEEK_CUR) == 0);
                 current_size *= 2;
             }
