@@ -9,9 +9,11 @@
 #include <limits.h>
 
 int to_utf8(unsigned short cp, unsigned char seq[]) {
-    unsigned short bound[4] = {(unsigned short)0x0000,
-                               (unsigned short)0x0080,
-                               (unsigned short)0x0800};
+    unsigned short bound[4] = {
+        (unsigned short)0x0000,
+        (unsigned short)0x0080,
+        (unsigned short)0x0800
+    };
     
     if (bound[0] <= cp && cp < bound[1]) {
         seq[0] = cp;
