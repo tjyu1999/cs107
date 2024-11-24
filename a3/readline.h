@@ -15,7 +15,7 @@ char *read_line(FILE *fp) {
     size_t current_size = MINIMUM_SIZE;
     char *line = NULL;
     
-    while (1) {
+    while (true) {
         line = realloc(line, current_size);
         assert(line != NULL);
     
