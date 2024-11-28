@@ -15,7 +15,7 @@ void print_uniq_lines(FILE *fp) {
     size_t count = 1;
     
     while (true) {
-        if (ungetc(getc(fp), fp) == EOF){
+        if (ungetc(getc(fp), fp) == EOF) {
             if (prev != NULL){
                 printf("%lu %s\n", count, prev);
                 free(prev);
