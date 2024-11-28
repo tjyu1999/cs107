@@ -19,6 +19,7 @@ int to_utf8(unsigned short cp, unsigned char seq[]) {
         seq[0] = cp;
         return 1;
     }
+    
     if (bound[1] <= cp && cp < bound[2]) {
         seq[0] = '\xC0' + (char)((cp & (unsigned short)0x07C0) >> 6);
         seq[1] = '\x80' + (char)(cp & (unsigned short)0x003F);
