@@ -1,4 +1,4 @@
-二/* mytail:
+/* mytail:
  *
  * a simplified version of Unix tail command
  */
