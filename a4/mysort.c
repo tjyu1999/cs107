@@ -117,7 +117,8 @@ void sort_lines(FILE *fp, cmp_fn_t cmp, bool uniq, bool reverse) {
 
 int main(int argc, char *argv[]) {
     cmp_fn_t cmp = cmp_pstr;
-    bool uniq = false, reverse = false;
+    bool uniq = false;
+    bool reverse = false;
 
     int opt;
     while ((opt = getopt(argc, argv, "lnru")) != -1) {
