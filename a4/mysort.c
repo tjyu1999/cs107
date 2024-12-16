@@ -1,3 +1,9 @@
+/* mysort:
+ *
+ * a simplified version of the Unix sort command
+ * it takes in the name of a file and prints its lines in sorted order
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
