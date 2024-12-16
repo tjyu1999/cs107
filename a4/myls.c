@@ -1,3 +1,10 @@
+/* myls:
+ *
+ * a simplified version of the Unix ls command
+ * it takes in zero or more arguments, which are paths to directories,
+ * and lists the directory entries from each path, one per line
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
