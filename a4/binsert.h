@@ -1,3 +1,8 @@
+/* binsert:
+ *
+ * search for a given element in a sorted array using binary search, and return a pointer to it
+ */
+
 #include <string.h>
 
 void insert(const void *base, size_t *p_nelem, size_t width, void *p, const void *key) {
