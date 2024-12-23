@@ -1,3 +1,8 @@
+/* test_binsert:
+ *
+ * sort integers in ascending order, and strings alphabetically
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
